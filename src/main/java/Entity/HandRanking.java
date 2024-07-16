@@ -1,3 +1,5 @@
+package Entity;
+
 public enum HandRanking {
     ROYAL_FLUSH(1),
     STRAIGHT_FLUSH(2),

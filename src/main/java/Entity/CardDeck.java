@@ -1,6 +1,7 @@
+package Entity;
+
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Iterator;
 
 public class CardDeck {
     private final ArrayList<Card> carddeck;
@@ -11,7 +12,7 @@ public class CardDeck {
         carddeck = new ArrayList<>();
         for (CardNumber number : CardNumber.values()) {
             for (CardSuit suit : CardSuit.values()) {
-                carddeck.add(new Card(number, suit));
+                carddeck.add(new Card(number, suit, false));
             }
         }
     }
@@ -34,4 +35,5 @@ public class CardDeck {
     public void Shuffle(){
         Collections.shuffle(carddeck);
     }
+
 }

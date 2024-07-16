@@ -1,3 +1,5 @@
+package Entity;
+
 public enum CardNumber {
     ONE("A", 14),
     TWO("2", 2),

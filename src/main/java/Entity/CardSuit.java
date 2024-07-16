@@ -1,7 +1,9 @@
+package Entity;
+
 public enum CardSuit {
     SPADE("SPADE", 1),
-    DIAMOND("DIAMOND", 2),
-    HEART("HEART", 3),
+    DIAMOND("DIAMOND", 3),
+    HEART("HEART", 2),
     CLOVER("CLOVER", 4);
 
     private final String value;

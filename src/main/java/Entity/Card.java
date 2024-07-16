@@ -1,10 +1,14 @@
+package Entity;
+
 public class Card {
     private final CardNumber number;
     private final CardSuit suit;
+    public boolean show;
 
-    public Card(CardNumber number, CardSuit suit) {
+    public Card(CardNumber number, CardSuit suit, boolean show) {
         this.number = number;
         this.suit = suit;
+        this.show = show;
     }
 
     public String getNumber() {
@@ -19,6 +23,18 @@ public class Card {
     }
     public int getSuitRank() {
         return suit.getRank();
+    }
+
+    public void ChangeShow(){
+        if(show){
+            this.show = false;
+        } else {
+            this.show = true;
+        }
+    }
+
+    public boolean getShow(){
+        return show;
     }
 
     @Override
